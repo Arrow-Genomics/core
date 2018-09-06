@@ -1,6 +1,6 @@
 # core
 
-#### Preparing
+#### Preparing:
 1. First build and install the [Arrow C++](https://github.com/apache/arrow/tree/master/cpp) on the host machine.
 
 2. Put together "seqan" and "core" repos in a folder, i.e, "lib"<br />
