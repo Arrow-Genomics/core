@@ -333,7 +333,7 @@ writeRecord(bamFileOut, record_arrow);
              << std::chrono::duration_cast<std::chrono::microseconds>(t5 - t4).count() + timeVar
              << " microseconds" << std::endl; 
 
-   float Overhead =  ((float)timeOverhead / (std::chrono::duration_cast<std::chrono::microseconds>(t5 - t4).count() + timeVar))*100.0;
+   float Overhead =  (((std::chrono::duration_cast<std::chrono::microseconds>(t5 - t4).count() + timeVar)-(float)timeOverhead)/(float)timeOverhead) * 100.0;
    std::cout << "Total overhead: " << Overhead << " %" << std::endl; 
 
  
